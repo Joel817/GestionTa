@@ -4,21 +4,21 @@
  */
 package gestionPKgui;
 
-public class tareas {
+public class tareas {                                                           /** Creación de Clase Tareas **/
 
-   private String Titulo;
-   private String Descripcion;
+   private String Titulo;                                                       /** Declaración de atributos privados tipo String **/
+   private String Descripcion; 
    private String FechaVen;
    private String Estados;
 
-    public tareas(String Titulo, String Descripcion, String FechaVen, String Estados) {
+    public tareas(String Titulo, String Descripcion, String FechaVen, String Estados) {   /** Creación de Constructor **/
         this.Titulo = Titulo;
         this.Descripcion = Descripcion;
         this.FechaVen = FechaVen;
         this.Estados = Estados;
     }
 
-    public String getTitulo() {
+    public String getTitulo() {                                                  /** Creación de métodos set y get para el acceso a la variable privada de la clase  **/
         return Titulo;
     }
 
