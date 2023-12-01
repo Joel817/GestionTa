@@ -297,10 +297,6 @@ public class registro extends javax.swing.JFrame {                              
     }
 
 
-    private void TxtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTituloActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TxtTituloActionPerformed
-
     private void BtnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminarActionPerformed
         // TODO add your handling code here:
         int c;                                                                  /** Declaramos una variable **/
@@ -328,14 +324,16 @@ public class registro extends javax.swing.JFrame {                              
 
             c =JTableTareas.getSelectedRow();                                   /** La fila que se seleccione , se asignará a la variable c **/
             aux = Lis.get(c);                                              /** llamamos a nuestra lista **/
-            estado = JOptionPane.showInputDialog("INGRESA NUEVO ESTADO"); /** Variables con mensajes de control para ingreso de datos **/
-            titulo = JOptionPane.showInputDialog("INGRESA NUEVO TITULO");
+            titulo = JOptionPane.showInputDialog("INGRESA NUEVO TITULO"); /** Variables con mensajes de control para ingreso de datos **/
             descripcion = JOptionPane.showInputDialog("INGRESA NUEVA DESCRIPCIÓN");
             fechaven = JOptionPane.showInputDialog("INGRESA NUEVA FECHA DE VENCIMIENTO");
-            aux.setEstados(estado);
+            estado = JOptionPane.showInputDialog("INGRESA NUEVO ESTADO"); 
+           
             aux.setTitulo(titulo);
             aux.setDescripcion(descripcion);
             aux.setFechaVen(fechaven);
+            aux.setEstados(estado);
+            
                                            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "ESCOGER UNA FILA Y MODIFICA");
@@ -355,6 +353,10 @@ public class registro extends javax.swing.JFrame {                              
         int n =JOptionPane.showOptionDialog(null, "SALIR DEL SISTEMA", "TITULO", 0, 0, null, botones, null);
         
     }//GEN-LAST:event_formWindowClosing
+
+    private void TxtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTituloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtTituloActionPerformed
 
     /**
      * @param args the command line arguments
