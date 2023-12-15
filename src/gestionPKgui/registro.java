@@ -10,7 +10,9 @@ import javax.swing.JOptionPane;                                                 
 /**
  *
  * @author licjo
- */
+ *
+ * Joel Gutiérrez D.
+ * */
 public class registro extends javax.swing.JFrame {                              /** Creación de la clase registro que hereda del JFrame  **/
 
     /**
